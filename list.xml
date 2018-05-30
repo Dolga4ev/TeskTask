@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ToDoList>
+    <Task caption="Title 1" id="1">
+        <Description>Description of task 1</Description>
+        <Priority>100</Priority>
+	<Deadline>2017-05-12</Deadline>
+        <Status>done</Status>
+        <Complete>2017-05-19</Complete> 
+    </Task>
+    <Task caption="Title 2" id="2">
+        <Description>Description of task 2</Description>
+        <Priority>7</Priority>
+	<Deadline>2017-07-12</Deadline>
+        <Status>new</Status>
+        <Complete>-</Complete> 
+    </Task>
+    <Task caption="Title 3" id="3">
+        <Description>Description of task 3</Description>
+        <Priority>5</Priority>
+	<Deadline>2018-08-12</Deadline>
+        <Status>new</Status>
+        <Complete>-</Complete> 
+    </Task>
+    
+    <Task caption="Title 5" id="5">
+        <Description>Description of task 5</Description>
+        <Priority>25</Priority>
+	<Deadline>2013-01-12</Deadline>
+        <Status>complete</Status>
+        <Complete>2018-05-30</Complete> 
+    </Task>
+    <Task caption="Title 6" id="6">
+        <Description>Description of task 6</Description>
+        <Priority>73</Priority>
+	<Deadline>2011-03-12</Deadline>
+        <Status>complete</Status>
+        <Complete>2018-05-30</Complete> 
+    </Task>
+    <Task caption="Title 7" id="7">
+        <Description>Description of task 7</Description>
+        <Priority>84</Priority>
+	<Deadline>2017-02-12</Deadline>
+        <Status>done</Status>
+        <Complete>2017-12-16</Complete> 
+    </Task>
+
+<Task caption="Title 8" id="8">
+<Description>Description of task 10</Description>
+<Priority>7</Priority>
+<Deadline>2018-07-09</Deadline>
+<Status>new</Status>
+<Complete>-</Complete>
+</Task>
+</ToDoList>
