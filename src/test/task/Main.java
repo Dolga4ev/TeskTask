@@ -20,8 +20,12 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         String input;
         System.out.println("?help?");
+        Task t = new Task();
+
+
 
         do {
+
             input = scan.nextLine();
             String[] division = input.split("\\s");
 
@@ -29,7 +33,7 @@ public class Main {
                 System.out.println("list, new, done, in progress, complete i, add, edit i, remove i, exit");
             }
             if(input.equals("list")){
-                ViewFile.viewList("all");
+                t.view();
             }
             if(input.equals("new")){
                 ViewFile.viewList(input);
@@ -41,16 +45,40 @@ public class Main {
                 ViewFile.viewList("in_progress");
             }
             if(division[0].equals("complete")){
-                ViewFile.complete(Integer.parseInt(division[1]));
+                t.complete(Integer.parseInt(division[1]));
             }
             if(division[0].equals("add")){
-                ViewFile.New();
+                System.out.println("enter the new title");
+                input = scan.nextLine();
+                String title = input;
+                System.out.println("enter the new description");
+                input = scan.nextLine();
+                String description = input;
+                System.out.println("enter the new priority");
+                input = scan.nextLine();
+                String priority = input;
+                System.out.println("enter the new deadline");
+                input = scan.nextLine();
+                String deadline = input;
+                t.add(title, description, priority, deadline);
             }
             if(division[0].equals("edit")){
-                ViewFile.Edit(Integer.parseInt(division[1]));
+                System.out.println("enter the title (if you don't want to change, write '-')");
+                input = scan.nextLine();
+                String title = input;
+                System.out.println("enter the description (if you don't want to change, write '-')");
+                input = scan.nextLine();
+                String description = input;
+                System.out.println("enter the priority (if you don't want to change, write '-')");
+                input = scan.nextLine();
+                String priority = input;
+                System.out.println("enter the deadline (if you don't want to change, write '-')");
+                input = scan.nextLine();
+                String deadline = input;
+                t.edit(Integer.parseInt(division[1]), title, description, priority, deadline);
             }
             if(division[0].equals("remove")){
-                ViewFile.Remove(Integer.parseInt(division[1]));
+                t.remove(Integer.parseInt(division[1]));
             }
             if(input.equals("exit")){
                 System.out.println("see you soon");
